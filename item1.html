@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name=description
+          content="Quick Website UI Kit is an innovative HTML template solution which combines beautiful design and flawless functionality.">
+    <meta name=author content=Webpixels>
+    <title>Quick – Website UI Kit</title>
+    <style>@keyframes hidePreloader {
+               0% {
+                   width: 100%;
+                   height: 100%
+               }
+               100% {
+                   width: 0;
+                   height: 0
+               }
+           }
+
+    body > div.preloader {
+        position: fixed;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        z-index: 1071;
+        opacity: 0;
+        transition: opacity .5s ease;
+        overflow: hidden;
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    body:not(.loaded) > div.preloader {
+        opacity: 1
+    }
+
+    body:not(.loaded) {
+        overflow: hidden
+    }
+
+    body.loaded > div.preloader {
+        animation: hidePreloader .5s linear .5s forwards
+    }</style>
+    <script>window.addEventListener("load", function () {
+        setTimeout(function () {
+            document.querySelector("body").classList.add("loaded")
+        }, 300)
+    })</script>
+    <link rel=icon href=assets/img/brand/favicon.png type=image/png>
+    <link rel=stylesheet href=assets/libs/swiper/dist/css/swiper.min.css>
+    <link rel=stylesheet href=assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css>
+    <link rel=stylesheet href=assets/libs/@fortawesome/fontawesome-free/css/all.min.css>
+    <link rel=stylesheet href=assets/css/quick-website.css id=stylesheet>
+</head>
+<body>
+<div class=preloader>
+    <div class="spinner-border text-primary" role=status><span class=sr-only>Loading...</span></div>
+</div>
+<div class="tab-example-result">
+    <nav class="navbar navbar-horizontal navbar-expand-lg navbar-dark bg-dark mt-4">
+        <div class=container><a class=navbar-brand href=index.html><img alt="Image placeholder"
+                                                                        src=assets/img/brand/4-0s1.svg
+                                                                        id=navbar-logo> </a>
+            <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbar-main-collapse
+                    aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><span
+                    class=navbar-toggler-icon></span></button>
+            <div class="collapse navbar-collapse navbar-collapse-overlay" id=navbar-main-collapse>
+                <div class="collapse-header align-items-center">
+                    <div class=col-6><a class=navbar-brand href=index.html><img alt="Image placeholder"
+                                                                                src=assets/img/brand/light-mono.svg></a>
+                    </div>
+                    <div class="col-6 text-right">
+                        <button class=navbar-toggler type=button data-toggle=collapse data-target=#navbar-main-collapse
+                                aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><i
+                                data-feather=x></i></button>
+                    </div>
+                </div>
+                <ul class="navbar-nav ml-auto">
+                    <li class=nav-item><a class=nav-link href=index.html>Главная </a></li>
+
+                    <li class=nav-item><a class=nav-link href=index.html>Почему мы?</a></li>
+                    <li class=nav-item><a class=nav-link href=index.html>Системы</a></li>
+                    <li class=nav-item><a class=nav-link href=index.html>Примеры</a></li>
+                </ul>
+                <a class="btn btn-sm d-none d-lg-inline-block btn-warning ml-auto"
+                   href=https://themes.getbootstrap.com/product/quick-website-ui-kit/ target=_blank>Purchase now</a>
+                <div class="d-lg-none p-4 text-center"><a
+                        href=https://themes.getbootstrap.com/product/quick-website-ui-kit/ class="btn btn-block btn-sm
+                        btn-neutral rounded-pill" target=_blank>Заказать</a></div>
+            </div>
+        </div>
+    </nav>
+</div>
+
+
+<section class="slice">
+    <div class="container">
+        <div class="row row-grid">
+            <div class="col-lg-5">
+                <div data-toggle="sticky" data-sticky-offset="30">
+                    <a href="assets/img/theme/light/big.jpg" data-fancybox="">
+                        <img alt="Image placeholder" src="assets/img/theme/light/big.jpg" class="img-fluid">
+                    </a>
+
+                </div>
+            </div>
+            <div class="col-lg-7">
+                <div class="pl-lg-5">
+                    <!-- Product title -->
+                    <h5 class="h4">SANTI-BOX 3000</h5>
+                    <h6 class="text-sm">Стандартный</h6>
+                    <!-- Rating -->
+                    <div class="row align-items-center">
+                        <div class="col-6">
+                  <span class="static-rating static-rating-sm d-block"><i class="star fas fa-star voted"></i>
+                    <i class="star fas fa-star voted"></i>
+                    <i class="star fas fa-star voted"></i>
+                    <i class="star fas fa-star voted"></i>
+                    <i class="star fas fa-star"></i></span>
+                        </div>
+                        <div class="col-6 text-right">
+                            <ul class="list-inline mb-0">
+
+                                <li class="list-inline-item">
+                                    <span class="badge badge-success badge-pill ">Новинка!</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <!-- Description -->
+                    <div class="py-4 my-4 border-top border-bottom">
+                        <h6 class="text-sm">Описание:</h6>
+                        <p class="text-sm mb-0">
+                            Посты и рамки для дезинфекции предназначены для получения мелкодисперсных аэрозолей жидких
+                            дезинфицирующих средств с целью обеззараживания и дезинфекции верхней одежды и открытых
+                            кожных покровов человека.
+                        </p>
+                    </div>
+                    <dl class="row">
+                        <dt class="col-sm-5"><span class="h6 text-sm mb-0">
+Габаритные размеры :</span></dt>
+                        <dd class="col-sm-7"><span class="text-sm">1300х1000х1900</span></dd>
+                        <dt class="col-sm-5"><span class="h6 text-sm mb-0">Материал корпуса :</span></dt>
+                        <dd class="col-sm-7"><span class="text-sm">нержавеющая сталь</span></dd>
+                        <dt class="col-sm-5"><span class="h6 text-sm mb-0">Объем контейнера  :</span>
+                        </dt>
+                        <dd class="col-sm-7"><span class="text-sm">25</span></dd>
+                        <dt class="col-sm-5"><span class="h6 text-sm mb-0">Количество форсунок, шт :</span></dt>
+                        <dd class="col-sm-7"><span class="text-sm">10</span></dd>
+                        <dt class="col-sm-5"><span class="h6 text-sm mb-0">Количество контуров обработки, шт :</span>
+                        </dt>
+                        <dd class="col-sm-7"><span class="text-sm">	2</span></dd>
+                        <dt class="col-sm-5"><span class="h6 text-sm mb-0">Пропускная способность,чел :</span></dt>
+                        <dd class="col-sm-7"><span class="text-sm">	до 20</span></dd>
+                        <dt class="col-sm-5"><span class="h6 text-sm mb-0">Время одной обработки, сек :</span></dt>
+                        <dd class="col-sm-7"><span class="text-sm">	1-3</span></dd>
+                        <dt class="col-sm-5"><span class="h6 text-sm mb-0">Расход на 1 дозацию, мл :</span></dt>
+                        <dd class="col-sm-7"><span class="text-sm">10-20</span></dd>
+                        <dt class="col-sm-5"><span class="h6 text-sm mb-0">Параметры подключения, Гц/В :</span></dt>
+                        <dd class="col-sm-7"><span class="text-sm">50/230</span></dd>
+                        <dt class="col-sm-5"><span class="h6 text-sm mb-0">Мощность суммарная, кВт :</span></dt>
+                        <dd class="col-sm-7"><span class="text-sm">не более 0,6</span></dd>
+                        <dt class="col-sm-5"><span class="h6 text-sm mb-0">Вес, кг :</span></dt>
+                        <dd class="col-sm-7"><span class="text-sm">130</span></dd>
+                    </dl>
+                    <!-- Size -->
+                    <div class=" py-4 my-4 border-top ">
+                        <!-- Processor -->
+                        <h6>Габаритные размеры (ДхШхВ), мм</h6>
+                        <a href="#" class="text-sm">
+                        </a>
+                        <p class="text-sm mb-0">
+                            Посты и рамки для дезинфекции предназначены для получения мелкодисперсных аэрозолей жидких
+                            дезинфицирующих средств с целью обеззараживания и дезинфекции верхней одежды и открытых
+                            кожных покровов человека.
+                        </p>
+
+                    </div>
+                    <div class=" py-4 my-4 border-top ">
+                        <!-- Processor -->
+                        <h6>Материал корпуса :</h6>
+                        <a href="#" class="text-sm">
+                        </a>
+                        <p class="text-sm mb-0">
+                            Посты и рамки для дезинфекции предназначены для получения мелкодисперсных аэрозолей жидких
+                            дезинфицирующих средств с целью обеззараживания и дезинфекции верхней одежды и открытых
+                            кожных покровов человека.
+                        </p>
+
+                    </div>
+                    <div class=" py-4 my-4 border-top ">
+                        <!-- Processor -->
+                        <h6>Комплект поставки :</h6>
+                        <a href="#" class="text-sm">
+                        </a>
+                        <p class="text-sm mb-0">
+                            дезинфекционный пост – 1 шт;
+                            контейнер для дез. средства – 1 шт;
+                            комплект для подключения к электросети;
+                            комплект ЗИП;
+                            паспорт;
+                            инструкция по эксплуатации. </p>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<footer class="footer footer-dark " id="footer-main">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-5 mb-lg-0">
+                <a href="index.html">
+                    <img src="assets/img/brand/4-0s1.svg" alt="Footer logo" style="height: 70px;">
+                </a>
+                <p class="text-sm mt-3">Социально значимый проект
+                    по снижению заболеваемости населения</p>
+            </div>
+            <div class="col-lg-2 col-6 col-sm-4 ml-lg-auto mb-5 mb-lg-0">
+                <h6 class="heading mb-3">Горячая линия</h6>
+                <ul class="list-unstyled">
+                    <li>+7 (844) 45-80-05</li>
+
+
+                </ul>
+            </div>
+            <div class="col-lg-3 col-6 col-sm-4 mb-5 mb-lg-0">
+                <h6 class="heading mb-3">Телефон в г. Самара</h6>
+                <ul class="list-unstyled text-small">
+                    <li>+7 (845) 45-80-05
+                    </li>
+
+                </ul>
+            </div>
+            <div class="col-lg-3 col-sm-4 mb-5 mb-lg-0">
+                <h6 class="heading mb-3">г. Самара, Техническая, 11</h6>
+                <ul class="list-unstyled">
+                    <li><a href="#">info@santibox.ru</a></li>
+
+                </ul>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-md-between py-4 mt-4 delimiter-top">
+            <div class="col-md-6">
+                <div class="copyright text-sm font-weight-bold text-center text-md-left">
+                    © 2020 <a href="" class="font-weight-bold" target="_blank">Дизайн сайта разработан Blaze Design
+                    Studio</a>. Все права защищены.
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+<div class="modal fade fixed-right" id=modal-products tabindex=-1 role=dialog aria-hidden=true>
+    <div class="modal-dialog modal-vertical" role=document>
+        <div class=modal-content>
+            <div class=scrollbar-inner>
+                <div class=modal-body><h5 class="h6 mt-3">Bootstrap Themes</h5>
+                    <p class=text-sm>Our users love how easy is to work with our themes. Easy to switch, play and
+                        develop new products.</p>
+                    <hr class=my-4>
+                    <div class="card card-overlay hover-shadow-lg">
+                        <div class=h-100><img
+                                src=https://webpixels.s3.eu-central-1.amazonaws.com/public/themes/products/quick-website-ui-kit.png
+                                class=card-img-top alt="Quick Website UI Kit"></div>
+                        <div class="card-img-overlay d-flex flex-column align-items-center p-0">
+                            <div class="overlay-actions w-100 card-footer mt-auto"><a
+                                    href=https://themes.getbootstrap.com/product/purpose-quick-ui-kit/ class="h6 mb-0
+                                    stretched-link" target=_blank>Quick Website UI Kit</a></div>
+                        </div>
+                    </div>
+                    <div class="card card-overlay hover-shadow-lg">
+                        <div class=h-100><img
+                                src=https://webpixels.s3.eu-central-1.amazonaws.com/public/themes/products/purpose-website-ui-kit.png
+                                class=card-img-top alt="Purpose Website UI Kit"></div>
+                        <div class="card-img-overlay d-flex flex-column align-items-center p-0">
+                            <div class="overlay-actions w-100 card-footer mt-auto"><a
+                                    href=https://themes.getbootstrap.com/product/purpose-website-ui-kit/ class="h6 mb-0
+                                    stretched-link" target=_blank>Purpose Website UI Kit</a></div>
+                        </div>
+                    </div>
+                    <div class="card card-overlay hover-shadow-lg">
+                        <div class=h-100><img
+                                src=https://webpixels.s3.eu-central-1.amazonaws.com/public/themes/products/purpose-application-ui-kit.png
+                                class=card-img-top alt="Purpose Application UI Kit"></div>
+                        <div class="card-img-overlay d-flex flex-column align-items-center p-0">
+                            <div class="overlay-actions w-100 card-footer mt-auto"><a
+                                    href=https://themes.getbootstrap.com/product/purpose-application-ui-kit/ class="h6
+                                    mb-0 stretched-link" target=_blank>Purpose Application UI Kit</a></div>
+                        </div>
+                    </div>
+                    <div class="card card-placeholder align-items-center flex-column justify-content-center border-dashed"
+                         style=height:250px>
+                        <div class="col text-center">
+                            <div class=pt-5><i data-feather=smile class=text-primary style=width:50px;height:50px></i>
+                                <span class="h5 d-block mt-3">What's next?</span></div>
+                            <p class="text-sm px-4 mt-2 mb-0">We are already working on a new product, so stay
+                                tuned.</p></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="modal fade" tabindex=-1 role=dialog id=modal-cookies data-backdrop=false aria-labelledby=modal-cookies
+     aria-hidden=true>
+    <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
+        <div class="modal-content bg-dark">
+            <div class=modal-body><p class="text-sm text-white mb-3">We use cookies so that our themes work for you. By
+                using our website, you agree to our use of cookies.</p><a href=pages/utility/terms.html
+                                                                          class="btn btn-sm btn-neutral" target=_blank>Learn
+                more</a>
+                <button type=button class="btn btn-sm btn-primary mr-2" data-dismiss=modal>OK</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="assets/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="assets/libs/typed.js/lib/typed.min.js"></script>
+<script src=assets/libs/jquery/dist/jquery.min.js></script>
+<script src=assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js></script>
+<script src=assets/libs/in-view/dist/in-view.min.js></script>
+<script src=assets/libs/sticky-kit/dist/sticky-kit.min.js></script>
+<script src=assets/libs/svg-injector/dist/svg-injector.min.js></script>
+<script src=assets/libs/feather-icons/dist/feather.min.js></script>
+<script src=assets/libs/imagesloaded/imagesloaded.pkgd.min.js></script>
+<script src=assets/libs/jquery.scrollbar/jquery.scrollbar.min.js></script>
+<script src=assets/libs/jquery-scroll-lock/dist/jquery-scrollLock.min.js></script>
+<script src=assets/libs/swiper/dist/js/swiper.min.js></script>
+<script src=assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js></script>
+<script src=assets/js/quick-website.js></script>
+<link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
+<script>feather.replace({width: "1em", height: "1em"})</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104437451-1"></script>
+<script>function gtag() {
+    dataLayer.push(arguments)
+}
+
+window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-104437451-1")</script>
+</body>
+</html>

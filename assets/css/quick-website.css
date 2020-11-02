@@ -6582,7 +6582,7 @@ a.bg-danger:focus, a.bg-danger:hover, button.bg-danger:focus, button.bg-danger:h
 }
 
 .bg-light {
-    background-color: #eff2f7 !important
+    background-color: #273444 !important;
 }
 
 a.bg-light:focus, a.bg-light:hover, button.bg-light:focus, button.bg-light:hover {
@@ -18632,7 +18632,7 @@ svg {
 }
 
 .footer {
-    background-color: #0c66ff !important;
+    background-color: #273444 !important
     padding-top: 3rem
 }
 

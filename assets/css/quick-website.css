@@ -28400,6 +28400,20 @@ span.flatpickr-weekday {
 }
 
 
+#stats1, .count-particles {
+    -webkit-user-select: none;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#stats1 {
+    border-radius: 3px 3px 0 0;
+    overflow: hidden;
+}
+
+.count-particles {
+    border-radius: 0 0 3px 3px;
+}
 
 
 

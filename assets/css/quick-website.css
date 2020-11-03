@@ -6397,7 +6397,8 @@ a.close.disabled {
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: no-repeat 50%/100% 100%
+    background: no-repeat 50%/100% 100%;
+    background-color: #0b0f13;
 }
 
 .carousel-control-prev-icon {
@@ -28437,7 +28438,8 @@ span.flatpickr-weekday {
 
 #custCarousel .carousel-indicators li img {
     display: block;
-    opacity: 0.5
+    opacity: 0.9;
+
 }
 
 #custCarousel .carousel-indicators li.active img {

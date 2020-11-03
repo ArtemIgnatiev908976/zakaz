@@ -28453,3 +28453,80 @@ span.flatpickr-weekday {
 .carousel-item img {
     width: 80%
 }
+
+
+
+
+
+#custCarousel1 .carousel-indicators {
+    position: static;
+    margin-top: 20px
+}
+
+#custCarousel1 .carousel-indicators>li {
+    width: 100px
+}
+
+#custCarousel1 .carousel-indicators li img {
+    display: block;
+    opacity: 0.9;
+
+}
+
+#custCarousel1 .carousel-indicators li.active img {
+    opacity: 1
+}
+
+#custCarousel1 .carousel-indicators li:hover img {
+    opacity: 0.75
+}
+
+
+
+#custCarousel11 .carousel-indicators {
+    position: static;
+    margin-top: 20px
+}
+
+#custCarousel11 .carousel-indicators>li {
+    width: 100px
+}
+
+#custCarousel11 .carousel-indicators li img {
+    display: block;
+    opacity: 0.9;
+
+}
+
+#custCarousel11 .carousel-indicators li.active img {
+    opacity: 1
+}
+
+#custCarousel11 .carousel-indicators li:hover img {
+    opacity: 0.75
+}
+
+
+
+#custCarousel111 .carousel-indicators {
+    position: static;
+    margin-top: 20px
+}
+
+#custCarousel111 .carousel-indicators>li {
+    width: 100px
+}
+
+#custCarousel111 .carousel-indicators li img {
+    display: block;
+    opacity: 0.9;
+
+}
+
+#custCarousel111 .carousel-indicators li.active img {
+    opacity: 1
+}
+
+#custCarousel111 .carousel-indicators li:hover img {
+    opacity: 0.75
+}

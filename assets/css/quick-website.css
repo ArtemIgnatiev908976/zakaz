@@ -605,7 +605,7 @@ pre code {
 
 @media (min-width: 1200px) {
     .container {
-        max-width: 1140px
+        max-width: 1540px
     }
 }
 
@@ -6001,7 +6001,7 @@ a.close.disabled {
 
 @media (min-width: 992px) {
     .modal-lg, .modal-xl {
-        max-width: 800px
+        max-width: 600px
     }
 }
 
@@ -16792,7 +16792,7 @@ svg {
 }
 
 .breadcrumb {
-    border: 1px solid #eff2f7
+
 }
 
 .breadcrumb-sm {

@@ -85,11 +85,13 @@
                     </div>
                 </div>
                 <ul class="navbar-nav ml-auto">
-                    <li class=nav-item><a class=nav-link href=index.html>Главная </a></li>
+                    <li class=nav-item><a class=nav-link href="#header-main" data-scroll-to>Главная </a></li>
 
-                    <li class=nav-item><a class=nav-link href=index.html>Почему мы?</a></li>
-                    <li class=nav-item><a class=nav-link href=index.html>Системы</a></li>
-                    <li class=nav-item><a class=nav-link href=index.html>Примеры</a></li>
+                    <li class=nav-item><a class=nav-link href="#preim" data-scroll-to>Преимущества</a></li>
+                    <li class=nav-item><a class=nav-link href="#video" data-scroll-to>Видео</a></li>
+                    <li class=nav-item><a class=nav-link href="#sistems" data-scroll-to>Системы</a></li>
+                    <li class=nav-item><a class=nav-link href="#primer" data-scroll-to>Примеры</a></li>
+                    <li class=nav-item><a class=nav-link href="#contact" data-scroll-to>Контакты</a></li>
 
                 </ul>
                 <a class="btn btn-sm d-none d-lg-inline-block btn-warning ml-auto text-white"
@@ -179,7 +181,7 @@
     </section>
 
 </div>
-<section class="slice slice-lg ">
+<section class="slice slice-lg " id="preim">
     <div class="container">
         <div class="container">
             <div class="mb-5 text-center">
@@ -517,7 +519,7 @@
 
 
 <div id="covers-cover-2" title="covers/cover-2.html">
-    <section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen"
+    <section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen" id="video"
              style="background-image: url('assets/img/backgrounds/1.jpg');">
         <div id="particles-js2">
             <canvas class="particles-js-canvas-el" width="902" height="800"
@@ -571,7 +573,7 @@
 </div>
 
 
-<section class="slice pt-0 ">
+<section class="slice pt-0 " id="sistems">
     <div class="container">
         <div class="section-process-step">
             <div class="container">
@@ -1517,30 +1519,9 @@
 <!--    </div>-->
 
 <!--</section>-->
-<section class="slice  " id="7">
+<section class="slice  " id="primer">
     <div class="container position-relative">
-        <div class="card shadow-lg border-0 zindex-100">
-            <div class="card-body px-5 py-5 text-center text-md-left">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <h4 class="h5 mb-2">
-                            Если у вас остались вопросы, свяжитесь с нами</h4>
-                        <p class="mb-0">Наша служба поддержки доступна для вас в любое время.</p>
-                    </div>
-                    <div class="col-12 col-md-6 mt-4 mt-md-0 text-md-right"><a href="#"
-                                                                               class="btn btn-warning btn-icon rounded-pill text-white"><span
-                            class="btn-inner--icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
-                                                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
-                                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
-                                                         class="feather feather-phone">
-                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
-                                    </path>
-                                </svg> </span><span class="btn-inner--text text-white" target="_blank"
-                                                    data-toggle="modal"
-                                                    data-target="#modal_primary">Связаться</span></a></div>
-                </div>
-            </div>
-        </div>
+
         <div class="w-10 position-absolute bottom-n3 left-n5">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px"
                  y="0px" viewBox="0 0 361.1 384.8" style="enable-background:new 0 0 361.1 384.8;" xml:space="preserve"
@@ -1595,7 +1576,7 @@
 
 </section>
 
-<section class="slice slice-lg pt-1 overflow-hidden-x">
+<section class="slice slice-lg pt-1 overflow-hidden-x" >
     <div class="container">
         <div class="mb-5 text-center">
             <h1 class=" mt-4">Примеры установленных систем</h1>
@@ -1752,7 +1733,7 @@
 <!--</section>-->
 
 
-<section class="slice slice-lg bg-dark  " data-offset-top="#header-main" style="padding-top: 83.1875px;">
+<section class="slice slice-lg bg-dark  " data-offset-top="#header-main" style="padding-top: 83.1875px;" id="contact">
     <!-- SVG background -->
 
     <div class="container position-relative zindex-100">
@@ -1855,70 +1836,7 @@
         </div>
     </div>
 </footer>
-<div class="modal fade fixed-right" id=modal-products tabindex=-1 role=dialog aria-hidden=true>
-    <div class="modal-dialog modal-vertical" role=document>
-        <div class=modal-content>
-            <div class=scrollbar-inner>
-                <div class=modal-body><h5 class="h6 mt-3">Bootstrap Themes</h5>
-                    <p class=text-sm>Our users love how easy is to work with our themes. Easy to switch, play and
-                        develop new products.</p>
-                    <hr class=my-4>
-                    <div class="card card-overlay hover-shadow-lg">
-                        <div class=h-100><img
-                                src=https://webpixels.s3.eu-central-1.amazonaws.com/public/themes/products/quick-website-ui-kit.png
-                                class=card-img-top alt="Quick Website UI Kit"></div>
-                        <div class="card-img-overlay d-flex flex-column align-items-center p-0">
-                            <div class="overlay-actions w-100 card-footer mt-auto"><a
-                                    href=https://themes.getbootstrap.com/product/purpose-quick-ui-kit/ class="h6 mb-0
-                                    stretched-link" target=_blank>Quick Website UI Kit</a></div>
-                        </div>
-                    </div>
-                    <div class="card card-overlay hover-shadow-lg">
-                        <div class=h-100><img
-                                src=https://webpixels.s3.eu-central-1.amazonaws.com/public/themes/products/purpose-website-ui-kit.png
-                                class=card-img-top alt="Purpose Website UI Kit"></div>
-                        <div class="card-img-overlay d-flex flex-column align-items-center p-0">
-                            <div class="overlay-actions w-100 card-footer mt-auto"><a
-                                    href=https://themes.getbootstrap.com/product/purpose-website-ui-kit/ class="h6 mb-0
-                                    stretched-link" target=_blank>Purpose Website UI Kit</a></div>
-                        </div>
-                    </div>
-                    <div class="card card-overlay hover-shadow-lg">
-                        <div class=h-100><img
-                                src=https://webpixels.s3.eu-central-1.amazonaws.com/public/themes/products/purpose-application-ui-kit.png
-                                class=card-img-top alt="Purpose Application UI Kit"></div>
-                        <div class="card-img-overlay d-flex flex-column align-items-center p-0">
-                            <div class="overlay-actions w-100 card-footer mt-auto"><a
-                                    href=https://themes.getbootstrap.com/product/purpose-application-ui-kit/ class="h6
-                                    mb-0 stretched-link" target=_blank>Purpose Application UI Kit</a></div>
-                        </div>
-                    </div>
-                    <div class="card card-placeholder align-items-center flex-column justify-content-center border-dashed"
-                         style=height:250px>
-                        <div class="col text-center">
-                            <div class=pt-5><i data-feather=smile class=text-primary style=width:50px;height:50px></i>
-                                <span class="h5 d-block mt-3">What's next?</span></div>
-                            <p class="text-sm px-4 mt-2 mb-0">We are already working on a new product, so stay
-                                tuned.</p></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<div class="modal fade" tabindex=-1 role=dialog id=modal-cookies data-backdrop=false aria-labelledby=modal-cookies
-     aria-hidden=true>
-    <div class="modal-dialog modal-dialog-aside left-4 right-4 bottom-4">
-        <div class="modal-content bg-dark">
-            <div class=modal-body><p class="text-sm text-white mb-3">We use cookies so that our themes work for you. By
-                using our website, you agree to our use of cookies.</p><a href=pages/utility/terms.html
-                                                                          class="btn btn-sm btn-neutral" target=_blank>Learn
-                more</a>
-                <button type=button class="btn btn-sm btn-primary mr-2" data-dismiss=modal>OK</button>
-            </div>
-        </div>
-    </div>
-</div>
+
 
 <script src="assets/js/wow.min.js"></script>
 <script>

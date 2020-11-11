@@ -66,8 +66,9 @@
 <div class=preloader>
     <div class="spinner-border text-primary" role=status><span class=sr-only>Loading...</span></div>
 </div>
-<div class="tab-example-result">
-    <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-dark bg-dark" id=navbar-main>
+<header class= id=header-main>
+
+    <nav class="navbar navbar-main navbar-expand-lg navbar-sticky navbar-dark bg-dark sticky" id=navbar-main>
         <div class=container><a class=navbar-brand href=index.html><img alt="Image placeholder"
                                                                         src=assets/img/brand/4-0s1.svg
                                                                         id=navbar-logo> </a>
@@ -86,22 +87,34 @@
                     </div>
                 </div>
                 <ul class="navbar-nav ml-auto">
-                    <li class=nav-item><a class=nav-link href="index.html#header-main" data-scroll-to>Главная </a></li>
+                    <li class= nav-item navbar-toggler  data-toggle=collapse data-target=#navbar-main-collapse
+                        aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><a class=nav-link href="#header-main" data-scroll-to>Главная </a></li>
 
-                    <li class=nav-item><a class=nav-link href="index.html#preim" data-scroll-to>Преимущества</a></li>
-                    <li class=nav-item><a class=nav-link href="index.html#video" data-scroll-to>Видео</a></li>
-                    <li class=nav-item><a class=nav-link href="index.html#sistems" data-scroll-to>Системы</a></li>
-                    <li class=nav-item><a class=nav-link href="index.html#primer" data-scroll-to>Примеры</a></li>
-                    <li class=nav-item><a class=nav-link href="index.html#contact" data-scroll-to>Контакты</a></li>
+                    <li  class= nav-item navbar-toggler  data-toggle=collapse data-target=#navbar-main-collapse
+                         aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><a class=nav-link href="#preim" data-scroll-to>Преимущества</a></li>
+                    <li class=nav-item  nav-item navbar-toggler  data-toggle=collapse data-target=#navbar-main-collapse
+                        aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><a class=nav-link href="#video" data-scroll-to>Видео</a></li>
+                    <li class=nav-item  nav-item navbar-toggler  data-toggle=collapse data-target=#navbar-main-collapse
+                        aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><a class=nav-link href="#sistems" data-scroll-to>Системы</a></li>
+                    <li class=nav-item  nav-item navbar-toggler  data-toggle=collapse data-target=#navbar-main-collapse
+                        aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><a class=nav-link href="#primer" data-scroll-to>Примеры</a></li>
+                    <li class=nav-item  nav-item navbar-toggler  data-toggle=collapse data-target=#navbar-main-collapse
+                        aria-controls=navbar-main-collapse aria-expanded=false aria-label="Toggle navigation"><a class=nav-link href="#contact" data-scroll-to>Контакты</a></li>
 
                 </ul>
+
+
+
+
+
+
                 <a class="btn btn-sm d-none d-lg-inline-block btn-warning ml-auto text-white"
-                   href=# target=_blank>Заказать сейчас</a>
+                   href="#modal" data-toggle="modal" data-target=".docs-example-modal-lg" target=_blank>Заказать сейчас</a>
                 <div class="d-lg-none p-4 text-center"></div>
             </div>
         </div>
     </nav>
-</div>
+</header>
 
 
 <section class="slice">

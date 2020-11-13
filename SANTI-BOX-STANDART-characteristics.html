@@ -529,55 +529,53 @@
 <!-- Large modal -->
 
 
-<div id="modal" class="modal fade docs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-lg">
-        <div class="modal-content">
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
 
-            <div class="modal-header">
-                <div class="col-lg-12">
-                    <div class=" text-center ">
+        // get the form elements defined in your form HTML above
 
-                        <h1 class=" h1  mb-2" data-wow-delay=" 0.25s " style="visibility: visible;-webkit-animation-delay:  0.25s ; -moz-animation-delay:  0.25s ; animation-delay:  0.25s ;">
-                            Оставьте вашу заявку</h1>
+        let form = document.getElementById("my-form2");
+        let button = document.getElementById("my-form-button2");
+        let status = document.getElementById("my-form-status2");
 
-                    </div>
-                </div>
-            </div>
-            <div class="modal-body">
-                <div class="col-lg-12">
+        // Success and Error functions for after the form is submitted
 
-                    <form id="my-form" action="https://formspree.io/f/mjvpoyke" method="POST">
-                        <div class="row justify-content-center">
-                            <div class="col-md-9">
-                                <div class="form-group">
-                                    <label class="form-control-label   ">Имя</label>
-                                    <input type="text" name="name" class="form-control" placeholder="Имя">
-                                    <label class="form-control-label   ">Телефон</label>
-                                    <input type="text" name="name" class="form-control" placeholder=" +7 (999)-999-99-99">
-                                </div>
-                            </div>
+        function success() {
+            form.reset();
+            button.style = "display: none ";
+            window.location.href = "thanks.html"
+        }
 
+        function error() {
+            status.innerHTML = "Oops! There was a problem.";
+        }
 
-                        </div>
+        // handle the form submission event
 
+        form.addEventListener("submit", function(ev) {
+            ev.preventDefault();
+            var data = new FormData(form);
+            ajax(form.method, form.action, data, success, error);
+        });
+    });
 
-                        <div class="text-center mt-4 animated infinite pulse delay-2s">
-                            <button type="submit" id="my-form-button" class="btn btn-primary rounded-pill">Оставить
-                                заявку
-                            </button>
+    // helper function for sending an AJAX request
 
-                            <span class="d-block mt-4 text-sm text-white">Мы свяжемся с вами в течении 24х часов.</span>
-                        </div>
-
-
-                        <!--                            <h1 id="typeanim2" class="text-white lh-150 mb-4">123</h1>-->
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-
+    function ajax(method, url, data, success, error) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                success(xhr.response, xhr.responseType);
+            } else {
+                error(xhr.status, xhr.response, xhr.responseType);
+            }
+        };
+        xhr.send(data);
+    }
+</script>
 <script>
     window.addEventListener("DOMContentLoaded", function() {
 
@@ -625,7 +623,6 @@
         xhr.send(data);
     }
 </script>
-
 
 
 <script src="assets/js/wow.min.js"></script>

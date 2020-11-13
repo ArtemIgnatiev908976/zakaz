@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang=en>
+<head>
+
+    <meta charset=utf-8>
+    <meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+    <meta name=description
+          content="Sirius">
+    <meta name=author content=Sirius>
+    <style>@keyframes hidePreloader {
+               0% {
+                   width: 100%;
+                   height: 100%
+               }
+               100% {
+                   width: 0;
+                   height: 0
+               }
+           }
+
+    body > div.preloader {
+        position: fixed;
+        background: #fff;
+        width: 100%;
+        height: 100%;
+        z-index: 1071;
+        opacity: 0;
+        transition: opacity .5s ease;
+        overflow: hidden;
+        pointer-events: none;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    body:not(.loaded) > div.preloader {
+        opacity: 1
+    }
+
+    body:not(.loaded) {
+        overflow: hidden
+    }
+
+    body.loaded > div.preloader {
+        animation: hidePreloader .5s linear .5s forwards
+    }</style>
+    <script>window.addEventListener("load", function () {
+        setTimeout(function () {
+            document.querySelector("body").classList.add("loaded")
+        }, 300)
+    })</script>
+    <link rel=icon href=assets/img/brand/favicon.png type=image/png>
+    <link rel=stylesheet href=assets/libs/swiper/dist/css/swiper.min.css>
+    <link rel=stylesheet href=assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.css>
+    <link rel=stylesheet href=assets/libs/@fortawesome/fontawesome-free/css/all.min.css>
+    <link rel=stylesheet href=assets/css/quick-website.css id=stylesheet>
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css"/>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+
+</head>
+<body>
+<div class=preloader>
+    <div class="spinner-border text-primary" role=status><span class=sr-only>Loading...</span></div>
+</div>
+
+
+<section class="spotlight bg-cover bg-size--cover" data-spotlight="fullscreen"
+         style="background-image: url('assets/img/backgrounds/fon88.jpg');">
+
+    <div id="particles-js">
+        <canvas class="particles-js-canvas-el" width="902" height="750"
+                style="width: 1000%; height: 100%;"></canvas>
+    </div>
+    <span class="mask bg-dark opacity-7"></span>
+
+    <div class="spotlight-holder pt-9 pb-6 py-lg-0" style="height: 666px;">
+        <a href="index.html"
+           class="btn btn-neutral btn-icon-only rounded-circle position-absolute left-4 top-4 d-none d-lg-inline-flex"
+           data-toggle="tooltip" data-placement="right" title="" data-original-title="Вернуться на главную"><span
+                class="btn-inner--icon"><svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em"
+                                             viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                             stroke-linecap="round" stroke-linejoin="round"
+                                             class="feather feather-arrow-left"><line x1="19" y1="12" x2="5"
+                                                                                      y2="12"></line><polyline
+                points="12 19 5 12 12 5"></polyline></svg></span></a>
+        <div class="container d-flex align-items-center px-0">
+            <div class="col">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 text-center ">
+
+                        <h1 class="h1 mb-6 font-weight-600 text-white  ">Спасибо за
+                            заявку!</h1>
+                        <h6 class="h1 mb-6 font-weight-600 text-white ">Мы вам обязательно перезвоним.</h6>
+                        <a href="index.html "
+                           class="btn btn-white btn-icon rounded-pill hover-translate-y-n3 pulse-button  ">
+                            <span class="btn-inner--icon "><i class="fas fa-home "></i></span>
+                            <span class="btn-inner--text  ">Вернуться на главную?</span>
+                        </a>
+
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Large modal -->
+
+
+<script src="assets/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+<script src="assets/libs/typed.js/lib/typed.min.js"></script>
+<script src=assets/libs/jquery/dist/jquery.min.js></script>
+<script src=assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js></script>
+<script src=assets/libs/in-view/dist/in-view.min.js></script>
+<script src=assets/libs/sticky-kit/dist/sticky-kit.min.js></script>
+<script src=assets/libs/svg-injector/dist/svg-injector.min.js></script>
+<script src=assets/libs/feather-icons/dist/feather.min.js></script>
+<script src=assets/libs/imagesloaded/imagesloaded.pkgd.min.js></script>
+<script src=assets/libs/jquery.scrollbar/jquery.scrollbar.min.js></script>
+<script src=assets/libs/jquery-scroll-lock/dist/jquery-scrollLock.min.js></script>
+<script src=assets/libs/swiper/dist/js/swiper.min.js></script>
+<script src=assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js></script>
+<script src=assets/js/quick-website.js></script>
+
+<link rel="stylesheet" href="assets/libs/animate.css/animate.min.css">
+<script>feather.replace({width: "1em", height: "1em"})</script>
+
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-104437451-1"></script>
+<script>function gtag() {
+    dataLayer.push(arguments)
+}
+
+window.dataLayer = window.dataLayer || [], gtag("js", new Date), gtag("config", "UA-104437451-1")</script>
+</body>
+</html>

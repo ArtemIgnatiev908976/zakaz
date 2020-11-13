@@ -966,14 +966,14 @@ COVID-19 на 99%</span>
                             <div class="mt-5">
 
                                 <a
-                                        href="SANTI-BOX-STANDART.html"
+                                        href="#modal" data-toggle="modal" data-target=".docs-example-modal-lg" target=_blank
                                         class="btn btn-primary btn-icon  d-lg-inline-block"><span
-                                        class="btn-inner--text text-white">Описание</span> </a>
+                                        class="btn-inner--text text-white">Позвонить</span> </a>
 
                                 <a
                                     href="SANTI-BOX-STANDART-characteristics.html"
                                     class="btn btn-neutral btn-icon  d-lg-inline-block" ><span
-                                    class="btn-inner--text">Характеристики</span> </a></div>
+                                    class="btn-inner--text">Подробное описание</span> </a></div>
                         </div>
 
 
@@ -1119,16 +1119,16 @@ COVID-19 на 99%</span>
                             <div class="mt-5">
 
                                 <a
-                                        href="SANTI-BOX-PRO.html"
+                                        href="#modal" data-toggle="modal" data-target=".docs-example-modal-lg" target=_blank
                                         class="btn btn-primary btn-icon  d-lg-inline-block" ><span
-                                        class="btn-inner--text text-white">Описание</span> </a>
+                                        class="btn-inner--text text-white">Позвонить</span> </a>
 
 
 
                                 <a
                                     href="SANTI-BOX-PRO-characteristics.html"
                                     class="btn btn-neutral btn-icon  d-lg-inline-block" ><span
-                                    class="btn-inner--text">Характеристики</span> </a></div>
+                                    class="btn-inner--text">Подробное описание</span> </a></div>
                         </div>
                     </div>
 
@@ -1722,14 +1722,14 @@ COVID-19 на 99%</span>
                         Оставьте вашу заявку</h1>
 
                 </div>
-                <form id="my-form2" action="https://formspree.io/f/mjvpraee" method="POST">
+                <form id="my-form2" action="https://formspree.io/f/mjvpoyke" method="POST">
                     <div class="row justify-content-center">
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label class="form-control-label text-white  ">Имя</label>
                                 <input type="text" name="name" class="form-control" placeholder="Имя">
                                 <label class="form-control-label text-white  ">Телефон</label>
-                                <input type="text" name="name" class="form-control" placeholder=" +7 999 999 99 99">
+                                <input type="text" name="name" class="form-control" placeholder=" +7 (999)-999-99-99">
                             </div>
                         </div>
 
@@ -1824,14 +1824,14 @@ COVID-19 на 99%</span>
             <div class="modal-body">
                 <div class="col-lg-12">
 
-                    <form id="my-form2" action="https://formspree.io/f/mjvpraee" method="POST">
+                    <form id="my-form" action="https://formspree.io/f/mjvpoyke" method="POST">
                         <div class="row justify-content-center">
                             <div class="col-md-9">
                                 <div class="form-group">
                                     <label class="form-control-label   ">Имя</label>
                                     <input type="text" name="name" class="form-control" placeholder="Имя">
                                     <label class="form-control-label   ">Телефон</label>
-                                    <input type="text" name="name" class="form-control" placeholder=" +7 999 999 99 99">
+                                    <input type="text" name="name" class="form-control" placeholder=" +7 (999)-999-99-99">
                                 </div>
                             </div>
 
@@ -1840,7 +1840,7 @@ COVID-19 на 99%</span>
 
 
                         <div class="text-center mt-4 animated infinite pulse delay-2s">
-                            <button type="submit" id="my-form-button2" class="btn btn-primary rounded-pill">Оставить
+                            <button type="submit" id="my-form-button" class="btn btn-primary rounded-pill">Оставить
                                 заявку
                             </button>
 
@@ -1859,51 +1859,21 @@ COVID-19 на 99%</span>
 
 
 
-
-
-
-<script src="assets/js/wow.min.js"></script>
-<script>
-    new WOW().init();
-</script>
-
-<script src="assets/libs/typed.js/lib/typed.min.js"></script>
-<script src=assets/libs/jquery/dist/jquery.min.js></script>
-<script src=assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js></script>
-<script src=assets/libs/in-view/dist/in-view.min.js></script>
-<script src=assets/libs/sticky-kit/dist/sticky-kit.min.js></script>
-<script src=assets/libs/svg-injector/dist/svg-injector.min.js></script>
-<script src=assets/libs/feather-icons/dist/feather.min.js></script>
-<script src=assets/libs/imagesloaded/imagesloaded.pkgd.min.js></script>
-<script src=assets/libs/jquery.scrollbar/jquery.scrollbar.min.js></script>
-<script src=assets/libs/jquery-scroll-lock/dist/jquery-scrollLock.min.js></script>
-<script src=assets/libs/swiper/dist/js/swiper.min.js></script>
-<script src=assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js></script>
-<script src=assets/js/quick-website.js></script>
-<script src=assets/libs/stats.js></script>
-<script src=assets/js/app.js></script>
-<script src=assets/js/canvas.js></script>
-<script src=assets/js/particles.js></script>
-<script src=assets/js/particles2.js></script>
-<script src=assets/js/particles3.js></script>
-<script src=assets/js/particles4.js></script>
-<script src=assets/js/particles.min.js></script>
-
 <script>
     window.addEventListener("DOMContentLoaded", function() {
 
         // get the form elements defined in your form HTML above
 
-        var form = document.getElementById("my-form");
-        var button = document.getElementById("my-form-button");
-        var status = document.getElementById("my-form-status");
+        let form = document.getElementById("my-form");
+        let button = document.getElementById("my-form-button");
+        let status = document.getElementById("my-form-status");
 
         // Success and Error functions for after the form is submitted
 
         function success() {
             form.reset();
             button.style = "display: none ";
-            status.innerHTML = "Thanks!";
+            window.location.href = "thanks.html"
         }
 
         function error() {
@@ -1936,6 +1906,82 @@ COVID-19 на 99%</span>
         xhr.send(data);
     }
 </script>
+<script>
+    window.addEventListener("DOMContentLoaded", function() {
+
+        // get the form elements defined in your form HTML above
+
+        let form = document.getElementById("my-form2");
+        let button = document.getElementById("my-form-button2");
+        let status = document.getElementById("my-form-status2");
+
+        // Success and Error functions for after the form is submitted
+
+        function success() {
+            form.reset();
+            button.style = "display: none ";
+            window.location.href = "thanks.html"
+        }
+
+        function error() {
+            status.innerHTML = "Oops! There was a problem.";
+        }
+
+        // handle the form submission event
+
+        form.addEventListener("submit", function(ev) {
+            ev.preventDefault();
+            var data = new FormData(form);
+            ajax(form.method, form.action, data, success, error);
+        });
+    });
+
+    // helper function for sending an AJAX request
+
+    function ajax(method, url, data, success, error) {
+        var xhr = new XMLHttpRequest();
+        xhr.open(method, url);
+        xhr.setRequestHeader("Accept", "application/json");
+        xhr.onreadystatechange = function() {
+            if (xhr.readyState !== XMLHttpRequest.DONE) return;
+            if (xhr.status === 200) {
+                success(xhr.response, xhr.responseType);
+            } else {
+                error(xhr.status, xhr.response, xhr.responseType);
+            }
+        };
+        xhr.send(data);
+    }
+</script>
+
+<script src="assets/js/wow.min.js"></script>
+<script>
+    new WOW().init();
+</script>
+
+<script src="assets/libs/typed.js/lib/typed.min.js"></script>
+<script src=assets/libs/jquery/dist/jquery.min.js></script>
+<script src=assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js></script>
+<script src=assets/libs/in-view/dist/in-view.min.js></script>
+<script src=assets/libs/sticky-kit/dist/sticky-kit.min.js></script>
+<script src=assets/libs/svg-injector/dist/svg-injector.min.js></script>
+<script src=assets/libs/feather-icons/dist/feather.min.js></script>
+<script src=assets/libs/imagesloaded/imagesloaded.pkgd.min.js></script>
+<script src=assets/libs/jquery.scrollbar/jquery.scrollbar.min.js></script>
+<script src=assets/libs/jquery-scroll-lock/dist/jquery-scrollLock.min.js></script>
+<script src=assets/libs/swiper/dist/js/swiper.min.js></script>
+<script src=assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js></script>
+<script src=assets/js/quick-website.js></script>
+<script src=assets/libs/stats.js></script>
+<script src=assets/js/app.js></script>
+<script src=assets/js/canvas.js></script>
+<script src=assets/js/particles.js></script>
+<script src=assets/js/particles2.js></script>
+<script src=assets/js/particles3.js></script>
+<script src=assets/js/particles4.js></script>
+<script src=assets/js/particles.min.js></script>
+
+
 
 
 <script>
